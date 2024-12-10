@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+        <h1>Music Recommendation System</h1>
+        <p>Enter a song name to get personalized recommendations!</p>
+        <form method="POST" action="/songs">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="song_name" placeholder="Enter song name" required>
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

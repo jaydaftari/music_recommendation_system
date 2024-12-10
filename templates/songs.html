@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h2>Recommendations for "{{ song_name }}"</h2>
+        <ul class="list-group">
+            {% for rec in recommendations %}
+                <li class="list-group-item">{{ rec }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/" class="btn btn-secondary mt-4">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
+
